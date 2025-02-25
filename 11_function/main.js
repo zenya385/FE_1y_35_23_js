@@ -87,11 +87,14 @@ const global = 'GLOBAL'
   //5 ======================== function arow  ===========================
 
   
-  const fn = (a, b)=> console.log('hello');
+  // const fn = (a, b)=> console.log('hello');
+
+  const fn = (a, b)=> { return console.log('hello');}
+
   // fn()
   
 
-  // ()=>{}
+  // ()=>
 
 
 
