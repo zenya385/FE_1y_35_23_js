@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Делегування подій</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        outline: 1px solid red;
+      }
+      button {
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="js-add-btn">Добавити кнопку</button>
+
+    <div class="container js-container">
+      <button type="button">кнопка 1</button>
+      <button type="button">кнопка 2</button>
+      <button type="button">кнопка 3</button>
+      <button type="button">кнопка 4</button>
+      <button type="button">кнопка 5</button>
+    </div>
+    <script type="module" src="delegation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form action="myForm">
+        <label for="">
+            <input placeholder="Введи своє ім'я" type="text">
+        </label>
+        <label for="">
+            <input type="text">
+        </label>
+        <label for="">
+            <input type="text">
+        </label>
+        <button type="submit">submit</button>
+        <button class="my-button" type="button">кнопка</button>
+    </form> -->
+
+    <!--4 ============ Події сабміта форми =================== -->
+
+    <form class="js-register-form" autocomplete="off">
+        <div role="group">
+          <label>
+            Пошта
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Пароль
+            <input name="password" type="password" />
+          </label>
+        </div>
+  
+        <br />
+        <div role="group">
+          <b>Тип підписки:</b>
+          <label>
+            <input type="radio" name="subscription" value="free" />
+            Free
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="basic" />
+            Basic
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="pro" />
+            Pro
+          </label>
+        </div>
+  
+        <br />
+        <button type="submit">Зареєструватись</button>
+      </form>
+    
+    <!-- <script type="module" src="js/main.js"></script> -->
+    <script type="module" src="js/form.js"></script>
+</body>
+</html>
