@@ -1,0 +1,18 @@
+{
+  "name": "23_node-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeno385/23_node-npm.git"
+  },
+  "keywords": [],
+  "author": "Roman Zeno <zeno385@gmail.com>",
+  "license": "ISC",
+  "type": "commonjs"
+}
