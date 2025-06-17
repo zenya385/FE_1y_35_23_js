@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "server": "node index.js",
+    "start": "index.html"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "keywords": [],
   "author": "Roman Zeno <zeno385@gmail.com>",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
