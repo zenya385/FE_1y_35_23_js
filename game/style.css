@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+#gameArea {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #cce7ff;
+  border: 2px solid #000;
+}
+.target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#score,
+#timer {
+  font-size: 24px;
+  margin: 10px;
+}
+#startBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+}
