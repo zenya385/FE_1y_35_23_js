@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Дата та час у JavaScript</h1>
+
+    <div class="card">
+      <h2>📅 Поточна дата</h2>
+      <!-- <button id="showDateBtn" onclick="showDate()">Показати дату</button> -->
+      <button id="showDateBtn">Показати дату</button>
+      <div class="output" id="dateOutput"></div>
+    </div>
+
+    <div class="card">
+      <h2>⏰ Поточний час</h2>
+      <!-- <button onclick="showTime()">Показати час</button> -->
+      <button id="showTimeBtn">Показати час</button>
+      <div class="output" id="timeOutput"></div>
+    </div>
+
+    <div class="card">
+      <h2>🎉 Днів до Нового року</h2>
+      <!-- <button onclick="daysToNewYear()">Порахувати</button> -->
+      <button id="daysToNewYearBtn">Порахувати</button>
+      <div class="output" id="newYearOutput"></div>
+    </div>
+
+    <div class="card">
+      <h2>🧠 Вгадай годину</h2>
+      <button onclick="guessHour()">Спробувати</button>
+    </div>
+
+    <div class="card">
+      <h2>⏳ Секундомір</h2>
+      <button onclick="startTimer()">Запустити</button>
+      <div class="output" id="timerOutput">0 секунд</div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/example.js"></script>
+  </body>
+</html>
