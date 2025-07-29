@@ -1,0 +1,98 @@
+/* @font-face {
+  font-family: DSEG7-Classic-MINI;
+  src: url("../fonts/DSEG7-Classic-MINI/DSEG7ClassicMini-Bold.woff2")
+      format("woff2"),
+    url("../fonts/DSEG7-Classic-MINI/DSEG7ClassicMini-Bold.woff") format("woff"),
+    url("../fonts/DSEG7-Classic-MINI/DSEG7ClassicMini-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: "DSEG14-Classic-MINI";
+  src: url("../fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.woff2")
+      format("woff2"),
+    url("../fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.woff")
+      format("woff"),
+    url("../fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #23bde0;
+}
+
+h2 {
+  color: rgb(42, 11, 243);
+  font-family: "DSEG14-Classic-MINI";
+}
+
+#time {
+  /* font-family: "DSEG7-Modern"; */
+  /* font-family: "DSEG7-Classic-MINI"; */
+  font-family: "DSEG14-Classic-MINI";
+  /* font-family: "DSEG7-Modern-Bold-italic"; */
+  /* font-family: "DSEG7-Classic", monospace; */
+  /* */
+  font-size: 4rem;
+  background-color: black;
+  color: lime;
+  padding: 20px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: 5px;
+}
+label[for="datetime"] {
+  color: rgb(42, 11, 243);
+
+  font-family: "DSEG14-Classic-MINI";
+}
+
+input[type="datetime-local"] {
+  background-color: black;
+  color: #00ff00;
+  font-family: "DSEG14-Classic-MINI";
+
+  font-size: 1.5rem;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 0 10px #00ff00;
+}
+#countdown {
+  font-family: "DSEG14-Classic-MINI";
+
+  font-size: 4rem;
+  background-color: black;
+  color: lime;
+  padding: 20px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: 5px;
+}
+#countdown small {
+  font-size: 34px;
+  color: #cc0feb;
+  margin-left: 0.1em;
+  margin-right: 0.5em;
+}
+
+button {
+  font-family: "DSEG14-Classic-MINI";
+  color: lime;
+  background-color: black;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 5px;
+}

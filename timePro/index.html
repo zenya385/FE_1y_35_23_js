@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/dseg@0.46.0/css/dseg.min.css"
+    /> -->
+
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Stopwatch</h2>
+    <div id="time">00:00:00.000</div>
+    <br />
+    <button type="button" id="startBtn">Start</button>
+    <button type="button" id="pauseBtn">Pause</button>
+    <button type="button" id="resetBtn">Reset</button><br />
+
+    ==========================================================
+
+    <h2>countdown timer</h2>
+    <label for="datetime">choose a date </label><br />
+    <input type="datetime-local" id="datetime" lang="en" />
+    <button type="button" id="startTimer">Start</button><br />
+    <div id="countdown">
+      00<small>days</small>00<small>hours</small>00<small>min</small> 00<small
+        >sec</small
+      >
+    </div>
+    <div id="message"></div>
+
+    <script type="module" src="stopwatch.js"></script>
+    <script type="module" src="countdown.js"></script>
+  </body>
+</html>
