@@ -11,11 +11,11 @@
 
 @font-face {
   font-family: "DSEG14-Classic-MINI";
-  src: url("../fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.woff2")
+  src: url("./fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.woff2")
       format("woff2"),
-    url("../fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.woff")
+    url("./fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.woff")
       format("woff"),
-    url("../fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.ttf")
+    url("./fonts/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.ttf")
       format("truetype");
   font-weight: 400;
   font-style: normal;
