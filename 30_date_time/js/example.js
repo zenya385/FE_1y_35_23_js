@@ -10,6 +10,8 @@ const newYearOutput = document.querySelector("#newYearOutput");
 showDateBtn.addEventListener("click", showDate);
 showTimeBtn.addEventListener("click", showTime);
 daysToNewYearBtn.addEventListener("click", daysToNewYear);
+console.log(new Date(1753979100000));
+console.log(Date.now());
 
 function showDate() {
   const now = new Date();
