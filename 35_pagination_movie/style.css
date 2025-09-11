@@ -17,13 +17,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  /* gap: 15px; */
+  /* align-items: center; */
+  gap: 5px;
   list-style: none;
 }
 .list-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -31,7 +32,7 @@ img {
   margin: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
-  width: calc((100% - 4 * 15px) / 4);
+  width: calc((100% - 4 * 43px) / 4);
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
