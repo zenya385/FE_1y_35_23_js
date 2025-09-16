@@ -69,13 +69,18 @@ function handlerAddPost() {
   <textarea name="decription" cols="30" rows="10"></textarea>
   <button>Добавити пост</button>
 </form>`;
-  const form = document.querySelector(".js-add");
+  const form = document.querySelector(".js-form-add");
   form.addEventListener("submit", handlerFormSubmit);
 }
 
 function handlerFormSubmit(evt) {
   evt.preventDefault();
-  console.log("evt.currentTarget.elements :>> ", evt.currentTarget.elements);
+  //   console.log("evt.currentTarget.elements :>> ", evt.currentTarget);
+  //   console.dir(evt.currentTarget.elements);
+  const { name, decription } = evt.currentTarget.elements;
+  //   console.log("name.value :>> ", name.value);
+  //   console.log("decription.value :>> ", decription.value);
+
   const dataPost = {
     title: name.value,
     body: decription.value,
@@ -92,13 +97,13 @@ function addPostFetch(data) {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
-      "Content-Type": "application/json;",
+      "Content-Type": "application/json; charset=UTF-8",
     },
   };
 
   return fetch("https://jsonplaceholder.typicode.com/posts", options).then(
     (response) => {
-      //   console.log("response :>> ", response);
+      console.log("response :>> ", response);
       if (!response.ok) {
         throw new Error(response.statusText);
       }
