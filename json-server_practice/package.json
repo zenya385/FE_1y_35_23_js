@@ -1,0 +1,17 @@
+{
+  "name": "json-server_practice",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Roman Zeno <zeno385@gmail.com>",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server db.json"
+  },
+  "keywords": [],
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

@@ -60,6 +60,9 @@
 const addPost = document.querySelector(".js-add");
 const listPost = document.querySelector(".js-posts");
 const wrapperForm = document.querySelector(".js-form");
+const messageError = document.querySelector(".js-error");
+
+// console.log("addPost :>> ", addPost);
 
 addPost.addEventListener("click", handlerAddPost);
 
@@ -74,9 +77,9 @@ function handlerAddPost() {
 }
 
 function handlerFormSubmit(evt) {
-  evt.preventDefault();
-  //   console.log("evt.currentTarget.elements :>> ", evt.currentTarget);
-  //   console.dir(evt.currentTarget.elements);
+  evt.preventDefault(); //5 заборона перезавантажені сторінки при сабміті
+  // console.log("evt.currentTarget.elements :>> ", evt.currentTarget);
+  // console.dir(evt.currentTarget.elements);
   const { name, decription } = evt.currentTarget.elements;
   //   console.log("name.value :>> ", name.value);
   //   console.log("decription.value :>> ", decription.value);
@@ -86,10 +89,25 @@ function handlerFormSubmit(evt) {
     body: decription.value,
   };
 
-  addPostFetch(dataPost).then((obj) => {
-    console.log("obj :>> ", obj);
-  });
-  //   console.log("evt :>> ", evt);
+  addPostFetch(dataPost)
+    .then((obj) => {
+      listPost.insertAdjacentHTML("beforeend", createPostMarkup(obj));
+      // console.log("obj :>> ", obj);
+    })
+    .catch(() => (messageError.innerHTML = "Не можливо добавити пост"))
+    .finally(() => {
+      wrapperForm.innerHTML = "";
+      setInterval(() => {
+        messageError.innerHTML = "";
+      }, 4000);
+    });
+}
+
+function createPostMarkup({ id, title, body }) {
+  return `<li data-id="${id}">
+        <h2>${title}</h2>
+          <p>${body}</p>
+      </li>`;
 }
 
 function addPostFetch(data) {
@@ -111,3 +129,7 @@ function addPostFetch(data) {
     }
   );
 }
+
+// function name() {
+//   console.log("ghbdsn :>> ");
+// }
