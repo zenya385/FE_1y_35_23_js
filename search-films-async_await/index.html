@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search films</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+</head>
+<body>
+    <h1>Пошук фільмів</h1>
+    <input type="text" id="movieInput" placeholder="Введи назву фільму...">
+    <button id="searchBtn">Шукати</button>
+
+    <div id="results"></div>
+
+
+    <!-- ============================== modal ========================================== -->
+      
+    <div id="movieModal" class="modal">
+    <div class="modal-content" id="modalContent">
+      <button class="close-btn" id="closeModal">X</button>
+
+    </div>
+  </div>
+
+     <script type="module" src="js/main.js"></script>
+</body>
+</html>
